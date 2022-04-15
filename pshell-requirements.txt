@@ -1,0 +1,22 @@
+PS /Users/vvrubl/Downloads> /Users/Shared/Data/Documents/SoftServe/TI/CP/InProgress/interview_mac_39.ps1 
+CP Path /Users/Shared/Data/Documents/SoftServe/TI/CP/InProgress/INTERVIEWER DevOps CP - Maksym Honcharov.xlsx
+interview_mac_39.ps1: The term 'Open-ExcelPackage' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS /Users/vvrubl/Downloads> Find-Module -Name PowerShellGet | Install-Module
+PS /Users/vvrubl/Downloads> Find-Module -Name ImportExcel | Install-Module
+
+Untrusted repository
+You are installing the modules from an untrusted repository. If you trust this repository, change its InstallationPolicy value by running the 
+Set-PSRepository cmdlet. Are you sure you want to install the modules from 'https://www.powershellgallery.com/api/v2'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
+PS /Users/vvrubl/Downloads>       
+
+
+
+
+
+Very importantly run PowerShell elevated as administrator on your Windows machine and then run
+
+Find-Module -Name PowerShellGet | Install-Module
+Find-Module -Name ImportExcel | Install-Module
+
